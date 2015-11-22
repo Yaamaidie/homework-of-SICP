@@ -38,4 +38,10 @@ Exercise 1.4.
 a-plus-abs-b procedure:if b is greater than zero,a plus b,otherwise a minus b.
 
 Exercise 1.5.
-
+(define (p) (p))
+(define (test x y)
+        (if(= x 0) 0 y))
+to evaluate the expression
+(test 0 (p))
+applicative-order evaluation:0
+normal-order evaluation:0
