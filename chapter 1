@@ -45,3 +45,7 @@ to evaluate the expression
 (test 0 (p))
 applicative-order evaluation:0
 normal-order evaluation:0
+
+Exercise 1.6.
+
+Exercise 1.7.
