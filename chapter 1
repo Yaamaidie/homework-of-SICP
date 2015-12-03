@@ -49,3 +49,28 @@ normal-order evaluation:0
 Exercise 1.6.
 
 Exercise 1.7.
+(define (good-enough? guess x) (< (/ (abs (- guess (improve guess x))) guess) 0.001))
+Exercise 1.8.
+(define (cube-root-iter y x) 
+        (if (good-enough? y x)
+            y
+            (cube-root-iter (approximation y x)
+                            x)))
+good-enough? is defined:
+(define (good-enough? y x)
+        (< (/ (abs (- y 
+                      (approximation y x))) 
+              y) 
+           0.001))
+abs is defined:
+(define (abs x)
+        (if (< x 0) 
+            (-x)
+            x))
+approximation is defined:
+(define (approximation y x)
+        (/ (+ (/ x
+                 (* y y))
+              (* 2 y))
+           3))
+finally,wo needa way to get started:(define (cube-root x) (cobe-root-iter 1 x))
